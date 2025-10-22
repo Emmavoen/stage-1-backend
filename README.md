@@ -11,7 +11,7 @@ This is a RESTful API service built for the HNG Internship (Stage 1). It analyze
 
 ## Tech Stack
 
-* **Server:** Node.js, Express.js
+* **Server:** Bun.js, Express.js
 * **Language:** TypeScript
 * **Database:** MongoDB (with Mongoose)
 * **Environment:** dotenv
@@ -35,7 +35,7 @@ Follow these steps to get the project running on your local machine.
 3.  **Install dependencies:**
     (This installs all dependencies listed in `package.json`)
     ```bash
-    npm install
+    bun install
     ```
 
 4.  **Create an environment file:**
@@ -68,7 +68,7 @@ You can run the server in development or production mode.
 This command uses `nodemon` and `ts-node` to run the server. It will automatically restart when you save changes to a file.
 
 ```bash
-npm run dev
+bun dev
 ```
 
 ### Production Mode
@@ -77,10 +77,10 @@ This command first builds the TypeScript code into plain JavaScript in the `/dis
 
 ```bash
 # 1. Build the project
-npm run build
+bun run build
 
 # 2. Start the server
-npm run start
+bun run start
 ```
 
 The server will be running at `http://localhost:PORT`.
